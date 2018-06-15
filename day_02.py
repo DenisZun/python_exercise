@@ -94,4 +94,5 @@ import time
 a = raw_input("输入时间（格式如：2017-04-04）:")
 t = time.strptime(a,"%Y-%m-%d")
 print t
-print time.strftime("今年的第%j天",t).decode('utf-8')
+print time.strftime('%j', t)
+# print time.strftime("今年的第%j天",t).decode('utf-8')
